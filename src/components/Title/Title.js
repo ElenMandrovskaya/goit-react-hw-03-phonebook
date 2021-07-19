@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import { MainTitle } from "./Title.styled";
+import { SectionTitle } from "./Title.styled";
 
 export function Title({ title }) {
     return (
-         <MainTitle>{title}</MainTitle>
+         <SectionTitle>{title}</SectionTitle>
     )
 }
 

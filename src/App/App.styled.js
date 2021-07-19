@@ -15,3 +15,10 @@ box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
 export const Section = styled.section`
   /* padding: 40px 0; */
 `;
+export const MainTitle = styled.h1`
+  width: 900px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #9e1878;
+`;

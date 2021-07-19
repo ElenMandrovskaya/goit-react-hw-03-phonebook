@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import contacts from "../data/contacts.json";
-import { Main, Section } from './App.styled';
+import { Main, Section, MainTitle } from './App.styled';
 import { ContactForm } from "../components/ContactForm/ContactForm";
 import { ContactList } from "../components/ContactList/ContactList";
 import { Filter } from "../components/Filter/Filter";
@@ -47,8 +47,9 @@ export default class App extends Component {
   render() {
     return (
       <Main>
+        <MainTitle>Phonebook</MainTitle>
         <Section>
-          <Title title={"Phonebook"} />
+          <Title title={"Add contact"} />
           <ContactForm
             onSubmit={this.addContact} />   
         </Section>
@@ -59,7 +60,7 @@ export default class App extends Component {
             onChange={this.filterContact} />
         </Section>
         <Section>
-          <Title title="Contacts"/>
+          <Title title="Contacts list"/>
           <ContactList
             contacts={this.checkContact()}
             onDelete={this.removeContact} />
